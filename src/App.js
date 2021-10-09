@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Resturant from "./component/Resturant";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Resturant />
+    </>
   );
-}
+};
 
 export default App;
+
+// There are two ways to declare a Component:
+// 1. Arrow function
+// const Karan = () => {}
+
+// 2. Just a JS funtion
+// function Karan () {}
+
+// We have to ALWAYS RETURN 1 Tag consisting everthing.
+// The Best to have is <React.Fragment> or  Simply <>.
+
+// Also you can call different component in the parent component called Nested component.
+// To call a component just add, <Name of the component/> in the tag. Same as line 7.
